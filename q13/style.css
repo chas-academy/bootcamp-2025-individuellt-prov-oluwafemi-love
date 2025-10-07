@@ -1,7 +1,17 @@
+/* use flex to add all children to container side by side
+- use the correct flexbox property to create spacing between boxes
+- center them on the y-axis (vertically)
+- all boxes should take up the entire width of the page (excluding padding and other spacing)
+- the boxes should not take up more height than their content and padding require
+- .other-box should be twice as wide as .box */
+
+/* The words quite confuse me, if there were a picture reference it would have been great */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
 }
 
 .container {
@@ -9,9 +19,17 @@
   padding: 2rem;
   display: flex;
   background-color: #fff5ec;
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
   padding: 0.5rem;
   background-color: #ffd5c2;
+  height: fit-content;
+}
+.other-box{
+  height: calc(100% / 2);
 }

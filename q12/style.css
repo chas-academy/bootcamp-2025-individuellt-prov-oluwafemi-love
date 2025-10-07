@@ -1,3 +1,30 @@
 body {
   margin: 0;
+   background-color: hsl(206, 99%, 29%);
 }
+
+/* add padding to all pages at the edges, like a frame around the entire browser window
+    - make the title white
+    - make only the first paragraph italic
+    - make only the second paragraph white
+    - change the background color of the entire browser window to a color that contrasts well with both black and white.
+    all text content on the page should be clear and visible  */
+
+.container {
+  padding: 30px;
+ 
+
+  h1 {
+    color: white;
+  }
+   
+  
+  p:nth-of-type(odd){
+    font-style: italic;
+  }
+
+  p:nth-of-type(even){
+    color: white;
+  }
+}
+

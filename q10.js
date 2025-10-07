@@ -14,10 +14,16 @@ const data = [
 ];
 
 // returna namnet i samtliga objekt i arrayen
-const getName = (person) => {};
+// // return the name in all objects in the array
+const getName = (person) => {
+  data.forEach(obj => {
+    return obj.name;
+  });
+};
 
 // lämna denna orörd
-export const getAllNames = () => {
+//leave this untouched
+ const getAllNames = () => {
   let names = [];
   data.forEach((person) => {
     names.push(getName(person));
